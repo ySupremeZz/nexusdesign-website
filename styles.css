@@ -1,12 +1,12 @@
-.html{
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .body{
     font-family: 'Kanit', sans-serif;
     background-color: #000000FF;
     color: #000000FF;
-}
+};
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+};
