@@ -6,7 +6,7 @@
 
 body {
     background-color: black;
-
+overflow-x: hidden;
 }
 
 .safezone {
@@ -19,6 +19,14 @@ body {
     flex-wrap: wrap;
 }
 
+.safezone .bg_grad{
+    position: absolute;
+    width: 101%;
+    height: 101%;
+    z-index: -1;
+    object-fit: cover;
+}
+
 h1, p, a {
     font-family: 'Kanit', sans-serif;
     text-decoration: none;
@@ -27,7 +35,7 @@ h1, p, a {
 
 .Navbar {
     margin-top: 20px;
-    width: 90vh;
+    width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -74,8 +82,14 @@ color: black;
     color: black
 }
 
+.hero {
+        height: 100vh;
+        margin-top: -120px;
+}
+
 .hero .row {
-    justify-content: space-between;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
     align-content: center;
     align-self: center;
@@ -84,7 +98,10 @@ color: black;
 
 }
 
-.hero .row .col1 {
+.hero .row .col1 {    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;    height: 100vh;
     width: 40%;
 }
 
@@ -92,6 +109,6 @@ color: black;
     margin-top: 30px;
 }
 
-.hero .row .col2 {
+.hero .row .col2 {    height: 100vh;
     width: 60%;
 }
