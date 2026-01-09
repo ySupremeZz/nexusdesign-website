@@ -5,7 +5,18 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: black;
+
+}
+
+.safezone {
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h1, p, a {
@@ -15,54 +26,73 @@ h1, p, a {
 }
 
 .Navbar {
-    display: inline-flex;
-    width: 100vh;
-    height: 100px;
+    margin-top: 20px;
+    width: 90vh;
+    height: fit-content;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.Navbar .logo{
+.Navbar .logo {
     width: 70px;
     height: auto;
     margin-right: 30px;
 }
 
 .Navbar .ul {
-display: inline-block;
-flex-direction: row;
-}
-
-.Navbar .li{
-    width: 600px;
-}
-
-a {
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-.btn {
-    width: 150px;
-    height: 55px;
-}
-
-.hero {
-    width: 100vh;
-    height: 100vh;
+    display: inline-flex;
     flex-direction: row;
 }
 
-.hero .row {
+.Navbar .ul .btn{
+    background-color: yellow;
+    width: 65px;
+    height: 30px;
+    margin-left: 20px;
+}
+.Navbar .ul .btn p{
+color: black;
+}
+
+.Navbar .li{
     width: 100vh;
-    height: 100vh;
+    height: auto;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.btn-curso, .btn-pack {
+    width: 150px;
+    height: 55px;
+    background-color: yellow;
+    font-size: 16px;
+}
+
+.btn-curso p, .btn-pack p {
+    font-size: 22px;
+    color: black
+}
+
+.hero .row {
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    display: inline-flex;
+    margin: 0px 0px 0px 150px;
+
 }
 
 .hero .row .col1 {
-    width: 50vh;
-    height: auto;
+    width: 40%;
+
 }
+
+.hero .row .col1 .col{
+    margin-top: 30px;
+}
+
 .hero .row .col2 {
-    width: 50vh;
-    height: auto;
+    width: 60%;
 }
