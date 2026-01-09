@@ -48,7 +48,7 @@ a {
 }
 
 .hero {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
 }
 
