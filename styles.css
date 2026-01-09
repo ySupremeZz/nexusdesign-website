@@ -52,11 +52,11 @@ a {
     height: 100vh;
 }
 
-.col {
+.hero .row .col1 {
     width: 50vh;
     height: 100vh;
 }
-.col2 {
+.hero .row .col2 {
     width: 50vh;
     height: 100vh;
 }
