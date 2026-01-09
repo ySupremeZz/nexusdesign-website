@@ -1,0 +1,36 @@
+^C:\USERS\CJSCA\DESKTOP\NEXUSDESIGN_LANDINGPAGE\CMAKEFILES\B934BAA295E97D0653F93F217D441B15\GIT_SETUP.RULE
+setlocal
+cd C:\Users\CjsCa\Desktop\nexusdesign_landingpage
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+git init
+if %errorlevel% neq 0 goto :cmEnd
+git add .
+if %errorlevel% neq 0 goto :cmEnd
+git commit -m "#"
+if %errorlevel% neq 0 goto :cmEnd
+git branch -M main
+if %errorlevel% neq 0 goto :cmEnd
+git remote add origin https://github.com/ySupremeZz/nexusdesign-website.git
+if %errorlevel% neq 0 goto :cmEnd
+git commit --amend -m "#"
+if %errorlevel% neq 0 goto :cmEnd
+git push -u origin main
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\CJSCA\DESKTOP\NEXUSDESIGN_LANDINGPAGE\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/CjsCa/Desktop/nexusdesign_landingpage -BC:/Users/CjsCa/Desktop/nexusdesign_landingpage --check-stamp-file C:/Users/CjsCa/Desktop/nexusdesign_landingpage/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
