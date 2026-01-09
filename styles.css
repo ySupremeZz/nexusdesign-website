@@ -1,5 +1,4 @@
 * {
-    text-decoration: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +8,9 @@ body {
     background-color: #000000;
 }
 
-.h1, .p, .a {font-family: 'Kanit', sans-serif;
+h1, p, a {
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
     color: white;
 }
 
@@ -19,6 +20,12 @@ body {
 }
 
 .col2 {
-    width: 50%;
-    height: 60%;
+    width: 50vh;
+    height: 100vh;
+}
+
+.hero .row {
+    display: grid;
+    grid-row: auto;
+    grid-template-rows: auto;
 }
