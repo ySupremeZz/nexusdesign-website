@@ -6,11 +6,10 @@
 }
 
 body {
-    font-family: 'Kanit', sans-serif;
     background-color: #000000;
 }
 
-.h1 .p .a {
+.h1 .p .a {font-family: 'Kanit', sans-serif;
     color: white;
 }
 
@@ -19,7 +18,7 @@ body {
     height: 55px;
 }
 
-.3d-asset {
-    width: 70%;
-    height: 70%;
+.col2 {
+    width: 50%;
+    height: 60%;
 }
