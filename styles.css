@@ -48,7 +48,8 @@ a {
 }
 
 .hero {
-    display: inline-block;
+    width: 100vh;
+    height: 100vh;
     flex-direction: row;
 }
 
@@ -59,9 +60,9 @@ a {
 
 .hero .row .col1 {
     width: 50vh;
-    height: 100vh;
+    height: auto;
 }
 .hero .row .col2 {
     width: 50vh;
-    height: 100vh;
+    height: auto;
 }
