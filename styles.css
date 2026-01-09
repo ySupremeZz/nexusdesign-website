@@ -9,7 +9,7 @@ body {
     background-color: #000000;
 }
 
-.h1 .p .a {font-family: 'Kanit', sans-serif;
+.h1, .p, .a {font-family: 'Kanit', sans-serif;
     color: white;
 }
 
