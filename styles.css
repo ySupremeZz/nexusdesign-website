@@ -28,7 +28,8 @@ h1, p, a {
 }
 
 .hero {
-    display: grid;
+    display: inline-block;
+    columns: auto;
 }
 
 .hero .row {
