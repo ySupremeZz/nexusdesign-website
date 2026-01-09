@@ -49,7 +49,7 @@ a {
 
 .hero {
     display: inline-block;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .hero .row {
