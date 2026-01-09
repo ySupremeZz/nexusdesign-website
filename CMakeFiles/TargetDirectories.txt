@@ -1,3 +1,0 @@
-C:/Users/CjsCa/Desktop/nexusdesign_landingpage/CMakeFiles/git_setup.dir
-C:/Users/CjsCa/Desktop/nexusdesign_landingpage/CMakeFiles/ALL_BUILD.dir
-C:/Users/CjsCa/Desktop/nexusdesign_landingpage/CMakeFiles/ZERO_CHECK.dir
