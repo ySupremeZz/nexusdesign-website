@@ -28,7 +28,7 @@ h1, p, a {
     margin-right: 30px;
 }
 
-.Navbar .nav-links{
+.Navbar .ul {
 display: inline-block;
 flex-direction: row;
 }
