@@ -9,3 +9,17 @@ body {
     font-family: 'Kanit', sans-serif;
     background-color: #000000;
 }
+
+.h1 .p .a {
+    color: white;
+}
+
+.btn {
+    width: 150px;
+    height: 55px;
+}
+
+.3d-asset {
+    width: 70%;
+    height: 70%;
+}
