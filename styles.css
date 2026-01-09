@@ -14,6 +14,14 @@ h1, p, a {
     color: white;
 }
 
+.Navbar {
+    display: inline-block;
+    width: 100vh;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .btn {
     width: 150px;
     height: 55px;
