@@ -6,3 +6,9 @@ body{
     text-decoration: none;
      background-color: #ffae00,
 }
+
+.logo {
+    width: 200px;
+    height: auto;
+    color:pink
+}
