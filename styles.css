@@ -15,11 +15,21 @@ h1, p, a {
 }
 
 .Navbar {
-    display: inline-block;
+    display: inline-flex;
     width: 100vh;
     height: 100px;
     align-items: center;
     justify-content: space-between;
+}
+
+.Navbar .logo{
+    width: 70px;
+    height: auto;
+    margin-right: 30px;
+}
+
+.Navbar .li{
+    width: 600px;
 }
 
 a {
