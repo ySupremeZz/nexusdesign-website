@@ -1,19 +1,60 @@
+@font-face {
+  font-family: "SFProDisplayBlackItalic"; /* Nome que você dará à fonte */
+  src: url("./assets/fonts/SFProDisplay/SFPRODISPLAYBLACKITALIC.OTF")
+    format("otf");
+
+  font-family: "SFProDisplayBold"; /* Nome que você dará à fonte */
+  src: url("./assets/fonts/SFProDisplay/SFPRODISPLAYBOLD.OTF") format("otf");
+
+  font-family: "SFProDisplayHeavyItalic"; /* Nome que você dará à fonte */
+  src: url("./assets/fonts/SFProDisplay/SFPRODISPLAYHEAVYITALIC.OTF")
+    format("otf");
+
+  font-family: "SFProDisplayLightItalic"; /* Nome que você dará à fonte */
+  src: url("./assets/fonts/SFProDisplay/SFPRODISPLAYLIGHTITALIC.OTF")
+    format("otf");
+
+  font-family: "SFProDisplayMedium"; /* Nome que você dará à fonte */
+  src: url("./assets/fonts/SFProDisplay/SFPRODISPLAYMEDIUM.OTF") format("otf");
+
+  font-family: "SFProDisplayRegular"; /* Nome que você dará à fonte */
+  src: url("./assets/fonts/SFProDisplay/SFPRODISPLAYREGULAR.OTF") format("otf");
+
+  font-family: "SFProDisplaySemiBoldItalic"; /* Nome que você dará à fonte */
+  src: url("./assets/fonts/SFProDisplay/SFPRODISPLAYSEMIBOLDITALIC.OTF")
+    format("otf");
+
+  font-family: "SFProDisplayThinItalic"; /* Nome que você dará à fonte */
+  src: url("./assets/fonts/SFProDisplay/SFPRODISPLAYTHINITALIC.OTF")
+    format("otf");
+
+  font-family: "SFProDisplayLightItalic"; /* Nome que você dará à fonte */
+  src: url("./assets/fonts/SFProDisplay/SFPRODISPLAYLIGHTITALIC.OTF")
+    format("otf");
+}
+
 :root {
+  --clr-primary-100: #ffe181;
   --clr-primary-400: #ffc300;
-  --clr-primary-200: #ff5a00;
+  --clr-primary-900: #ff5a00;
 
   --clr-secondary: #003c97;
 
   --clr-grey: #00000080;
   --clr-light: #fff;
   --clr-dark: #000;
+  --clr-dark500: #00000055;
+  --clr-dark100: #00000095;
 
   --ff-primary: "Kanit", sans-serif;
-  --ff-secondary: "assets/fonts/SF Pro Display/";
+  --ff-secondary: "SFProDisplayRegular", sans-serif;
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
 
   --fw-regular: 300;
-  --fw-regular: 500;
-  --fw-regular: 900;
+  --fw-semi-bold: 500;
+  --fw-bold: 900;
 }
 
 *,
@@ -89,7 +130,6 @@ textarea:not([rows]) {
 
 html,
 body {
-  background-color: black;
   overflow-x: hidden;
   height: 100%;
   -moz-text-size-adjust: none;
@@ -97,6 +137,10 @@ body {
   text-size-adjust: none;
   min-height: 100vh;
   line-height: 1.5;
+}
+
+body {
+  background-color: black;
 }
 
 .safezone {
@@ -113,19 +157,21 @@ body {
   position: absolute;
   width: 101%;
   height: 101%;
-  z-index: -1;
+  z-index: -5;
   object-fit: cover;
 }
 
 h1,
 p,
 a {
-  font-family: "Kanit", sans-serif;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
   text-decoration: none;
-  color: white;
+  color: var(--clr-light);
 }
 
-.Navbar {
+.safezone .Navbar {
+  z-index: 10;
   margin-top: 20px;
   width: 100%;
   height: fit-content;
@@ -134,28 +180,96 @@ a {
   justify-content: space-evenly;
 }
 
-.Navbar .logo {
+.safezone .Navbar .logo {
   width: 70px;
   height: auto;
   margin-right: 30px;
 }
 
-.Navbar .ul {
+.safezone .Navbar .li {
+  width: 250px;
+}
+
+.safezone .Navbar .li a {
+  font-size: 18px;
+  color: var(--clr-light);
+}
+
+.safezone .Navbar .li a:hover {
+  color: var(--clr-primary-100);
+}
+
+.safezone .Navbar .li a:nth-child(1) {
+  color: var(--clr-primary-100);
+}
+
+.safezone .Navbar .ul {
   display: inline-flex;
   flex-direction: row;
 }
 
-.Navbar .ul .btn {
-  background-color: yellow;
-  width: 65px;
-  height: 30px;
-  margin-left: 20px;
-}
-.Navbar .ul .btn p {
-  color: black;
+.safezone .Navbar .ul .btn-flat {
+  background-color: var(--clr-primary-400);
+  border: none;
+  width: 110px;
+  height: 40px;
+  border-radius: 20px;
 }
 
-.Navbar .li {
+.safezone .Navbar .ul .btn-flat:hover {
+  background-color: var(--clr-primary-100);
+  cursor: pointer;
+  box-shadow: #ffc4005b 0px 0px 25px 5px;
+}
+
+.safezone .Navbar .ul .btn-line {
+  width: 110px;
+  height: 40px;
+  background-color: transparent;
+  margin-right: 15px;
+  border-radius: 20px;
+  border: 2px solid var(--clr-primary-400);
+}
+
+.safezone .Navbar .ul .btn-flat p,
+.safezone .Navbar .ul .btn-line p {
+  color: var(--clr-dark);
+  font-weight: var(--fw-semi-bold);
+  font-family: var(--ff-primary);
+}
+
+.safezone .Navbar .ul .btn-flat:hover p {
+  color: var(--clr-dark100);
+}
+
+.safezone .Navbar .ul .btn-line p {
+  color: var(--clr-light);
+}
+
+.safezone .Navbar .ul .btn-line:hover {
+  background-color: var(--clr-primary-400);
+  cursor: pointer;
+}
+
+.safezone .Navbar .ul .btn-flat .holding,
+.safezone .Navbar .ul .btn-line .holding {
+  align-items: center;
+  justify-self: center;
+  align-content: center;
+  display: inline-flex;
+}
+
+.safezone .Navbar .ul .btn-line .holding svg {
+  margin-right: 8px;
+  fill: var(--clr-light);
+}
+
+.safezone .Navbar .ul .btn-line:hover * {
+  color: var(--clr-dark100);
+  fill: var(--clr-dark100);
+}
+
+.safezone .Navbar .li {
   width: 100vh;
   height: auto;
   justify-content: space-evenly;
