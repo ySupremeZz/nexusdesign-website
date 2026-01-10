@@ -15,6 +15,9 @@
   </head>
   <body>
     <div class="safezone">
+      <div class="tracer">
+        <img class="Tracer" src="/assets/svg/path-tracer.svg" alt="Path" />
+      </div>
       <img src="assets/images/grad_back.png" alt="bg_grad" class="bg_grad" />
       <div class="Navbar">
         <img class="Logo" src="/assets/svg/Logo.svg" alt="Logo" />
@@ -26,42 +29,62 @@
           <a href="#">Sobre</a>
         </div>
         <div class="ul">
-          <button class="btn-line">
-            <div class="holding">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12.761"
-                height="15.321"
-                viewBox="0 0 12.761 15.321"
-              >
-                <path
-                  class="icon-user"
-                  id="user"
-                  d="M2691.5-226.392h-5c-1.324,0-1.924-1.925-1.158-3.286a6.435,6.435,0,0,1,3.061-2.848,5.393,5.393,0,0,0,3.1.978,5.4,5.4,0,0,0,3.1-.978,6.447,6.447,0,0,1,3.061,2.848c.766,1.361.165,3.286-1.158,3.286Zm-4.093-10.536v-.98A4.092,4.092,0,0,1,2691.5-242a4.092,4.092,0,0,1,4.091,4.092v.98a4.092,4.092,0,0,1-4.091,4.093A4.093,4.093,0,0,1,2687.407-236.928Z"
-                  transform="translate(-2685 242)"
-                />
-              </svg>
+          <div class="btn-login">
+            <button class="btn-line">
+              <div class="holding">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12.761"
+                  height="15.321"
+                  viewBox="0 0 12.761 15.321"
+                >
+                  <path
+                    class="icon-user"
+                    id="user"
+                    d="M2691.5-226.392h-5c-1.324,0-1.924-1.925-1.158-3.286a6.435,6.435,0,0,1,3.061-2.848,5.393,5.393,0,0,0,3.1.978,5.4,5.4,0,0,0,3.1-.978,6.447,6.447,0,0,1,3.061,2.848c.766,1.361.165,3.286-1.158,3.286Zm-4.093-10.536v-.98A4.092,4.092,0,0,1,2691.5-242a4.092,4.092,0,0,1,4.091,4.092v.98a4.092,4.092,0,0,1-4.091,4.093A4.093,4.093,0,0,1,2687.407-236.928Z"
+                    transform="translate(-2685 242)"
+                  />
+                </svg>
 
-              <p class="text-curso">Login</p>
-            </div>
-          </button>
-          <button class="btn-flat"><p class="text-curso">Registrar</p></button>
+                <p class="text-curso">Login</p>
+              </div>
+            </button>
+          </div>
+          <div class="btn-register">
+            <button class="btn-flat">
+              <p class="text-curso">Registrar</p>
+            </button>
+          </div>
         </div>
       </div>
       <div class="hero">
         <div class="row">
           <div class="col1">
-            <h1 class="Headline">O Nexus que conecta criativos a evolucão.</h1>
-            <a href="#" class="subhealine"
+            <h1 class="headline">O Nexus que conecta criativos a evolucão.</h1>
+            <div class="spacer"></div>
+            <a href="#" class="subheadline"
               >Cursos praticos, packs de assets e recursos profissionais para
               designers criarem mais rapido, com mais qualidade e
               consistencia.</a
             >
             <div class="col">
-              <button class="btn-curso"><p class="text-curso">Curso</p></button>
-              <button class="btn-pack">
-                <p class="text-pacotes">Pacotes</p>
-              </button>
+              <div class="btn-course">
+                <button class="btn-line">
+                  <p class="text-curso">Curso</p>
+                </button>
+              </div>
+              <div class="btn-pack">
+                <div class="holder-button">
+                  <button class="btn-flat">
+                    <p class="text-pacotes">Pacotes</p>
+                  </button>
+                  <img
+                    src="assets/images/side_button_glow.png"
+                    alt="side-button-effect"
+                    class="side-button-glow"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <div class="col2">
