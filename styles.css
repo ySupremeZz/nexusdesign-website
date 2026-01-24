@@ -158,6 +158,24 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+.bg_grad {
+  z-index: -999;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bg_grad img {
+  transform: translateX(-1px);
+  left: 0;
+  position: absolute;
+  background-size: cover;
+  width: 107%;
+  height: 100%;
+}
+
 body {
   height: 100%;
   -moz-text-size-adjust: none;
@@ -261,6 +279,7 @@ header * {
 }
 
 .primary-header {
+  margin-top: var(--size500);
   width: 100%;
 }
 
@@ -411,4 +430,10 @@ button[data-type="no-border"]:hover i {
 
 .card-list li {
   list-style-type: none;
+}
+
+.placeholder-video {
+  width: 70vh;
+  height: 400px;
+  background-color: pink;
 }
