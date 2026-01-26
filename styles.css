@@ -56,6 +56,7 @@
   --ff-heading: var(--ff-primary);
 
   --fw-regular: 300;
+  --fw-thin: 400;
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
@@ -379,7 +380,11 @@ button[data-type="no-border"] {
 }
 
 button[data-type="medium-size"] {
-  font-size: var(--fs-250);
+  font-weight: var(--fw-thin);
+  font-size: var(--fs-200);
+
+  padding-block: var(--size250);
+  padding-inline: var(--size600);
 }
 
 button[data-type="no-border"] i {
@@ -484,14 +489,18 @@ button[data-type="no-border"]:hover i {
   align-content: center;
   width: 315px;
   height: 300px;
-  transition: 0.1s ease-in-out;
+  transition: 0.225s all ease-in-out;
   border-radius: 9px;
 }
 
 .card:hover {
   cursor: pointer;
-  background-color: #ffe28111;
-  transform: translateY(-20px);
+  background-color: rgba(255, 225, 130, 0.02);
+  transform: translateY(-10px);
+}
+
+.card:hover p {
+  color: var(--clr-light);
 }
 
 .card-content {
@@ -510,6 +519,7 @@ button[data-type="no-border"]:hover i {
   text-align: center;
   line-height: var(--size450);
   width: 200px;
+  transition: 0.333s all ease-in-out;
 }
 
 .card-content h2 {
@@ -626,5 +636,10 @@ button[data-type="no-border"]:hover i {
 }
 
 .dropdown-label li img {
-  width: 1rem;
+  width: 0.75rem;
+  transform: translateX(-10px);
+}
+
+.dropdown-item:hover img {
+  transform: translateX(0px);
 }
